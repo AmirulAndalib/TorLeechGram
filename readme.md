@@ -1,11 +1,11 @@
-# [Join Tortoolkit Group for DEMO](https://t.me/TorToolKit)
-# TorToolkit Telegram
-So basically Tortoolkit is aimed to be the most versatile torrent leecher and Youtube-DL bot for telegram. This bot is highly customizable and to customize this bot you don't need to restart the bot every time. 
+# [Join TorLeechGram Group for DEMO](https://t.me/PriiiyoLeech)
+# TorLeechGram Telegram
+So basically TorLeechGram is aimed to be the most versatile torrent leecher and Youtube-DL bot for telegram. This bot is highly customizable and to customize this bot you don't need to restart the bot every time. 
 The bot gets started with minimum variables and others can be set as and when needed using the /settings.
 
 Table of Content
 - [FEATURES](#features)
-- [TEST THE BOT (DEMO)](https://t.me/TorToolKit)
+- [TEST THE BOT (DEMO)](https://t.me/PriiiyoLeech)
 - [DEPLOYMENT METHODS](#deployment)
   - [Heroku](##heroku)
   - [Zeet](##zeet)
@@ -33,102 +33,6 @@ Following are some awesome features offered by this bot:-
 - Get the server status.
 - InstaDL support
 - Browse the settings menu and try stuff. ;)
-
-# Deployment
-
-## ***Heroku***
-### For Heroku users New repo will come soon (This repo will not work on heroku)
-[![Deploy](https://telegra.ph/file/e7d224c45cf1d106a28fa.png)](https://telegra.ph/Heroku-TorToolkit-01-18)
-
-## ***Zeet***
-According to me, this platform provides resources that are enough for a genuine user and by default prevents Abuse:
-Click the logo to see the video guide to see how to deploy. The web is not yet available but soon will be available on Zeet.
-
-[![Deploy](https://telegra.ph/file/a81a05cc874e8636ddb86.png)](https://youtu.be/WWi9JWDzXSw)
-
-## ***VPS Deployment Docker***
-ExecVarsSample.py location:- `tortoolkit/consts/ExecVarsSample.py`
-
-### [Deploy with Docker Video](https://youtu.be/c8_TU1sPK08)
-
-Steps:-
-1. You should install docker first :- [How to Install Docker](https://docs.docker.com/engine/install/)
-
-2. Clone the repo and edit ExecVarsSample.py 
-   1. While editing Change 
-      1. `API_HASH`
-      2. `API_ID`
-      3. `BOT_TOKEN`
-      4. `ALD_USR`
-      5. `BASE_URL_OF_BOT`
-      6. `Uncomment the below DB_URI and comment out the above DB_URI`
-      7. Also if the given procedure dosent work then set  `IS_VPS` to True and if you want to change the port when IS_VPS is true then change `SERVPORT` to your desired port number. (Note this should be used as backup)
-
-3. After that execute these commands in root of the repo where tortoolkit folder is located.
-    1. `apt install docker-compose`
-    2. `docker-compose up`
-
-4. If you edit a file like ExecVarsSample.py in future just run below commands
-    1. `docker-compose build`
-    2. `docker-compose up`
-
-### ***VPS Deployment Without Docker***
-### [Demo video for Deployment Without Docker](https://youtu.be/HYjG4-VfxXs)
-
-1. Run the following commands. (Following commands can be used to setup the vps from scratch)
-   
-    1. `git clone https://github.com/yash-dk/TorToolkit-Telegram.git`
-    2. `sudo apt update`
-    3. `sudo apt install -y python3.8`
-    4. `sudo apt install -y python3-venv`
-    5. `python3 -m venv venv`
-    6. `source venv/bin/activate`
-    7. `cd TorToolkit-Telegram`
-    8. `pip install -r requirements.txt`
-	9. `sudo apt install -y postgresql postgresql-contrib`
-	10. `apt -qq install -y curl git wget python3 python3-pip aria2 ffmpeg mediainfo unzip p7zip-full p7zip-rar`
-	11. `curl https://rclone.org/install.sh | bash`
-	12. `apt-get install -y software-properties-common`
-	13. `apt-get -y update`
-	14. `add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable`
-	15. `apt install -y qbittorrent-nox`
-2. After that setup the database:- Remember the 'your-pass' that you enter below
-    1. `sudo -u postgres bash`
-    2. `createdb tortk`
-    3. `psql`
-    4. `ALTER USER postgres with password 'your-pass';`
-    5. `exit`
-    6. `exit`
-
-3. After that setup the Variables.
-
-	Assuming that you are in the directory where you clonned the repo
-	   
-    1. `cd TorToolkit-Telegram/tortoolkit/consts`
-	2. `nano ExecVarsSample.py`
-    3. Change the following:-
-       1.  `API_HASH`
-       2.  `API_ID`
-       3.  `BOT_TOKEN`
-       4.  `ALD_USR`
-       5.  `BASE_URL_OF_BOT`
-       6.  Change `DB_URI = "dbname=tortk user=postgres password=your-pass host=127.0.0.1 port=5432"`
-
-           Enter the password in the above string.
-       7.  After that run (You can use any port for the web interface here i am using 80).
-           Each time before starting the bot export the port Number
-
-           `export PORT=80`
-
-4. And finally run this in clonned folder.
-    1. `chmod 777 start.sh`
-    2. `./start.sh`
-
-## Variables
-- `IS_VPS`
-    - Values :- `False`/`True`
-    - Default Value :- `False`
-    - Use :- Only set to True if you get errors regarding web server in VPS deployment. Only use as backup.
 
 ### ***Compulsory Vars***
 
@@ -246,6 +150,34 @@ Steps:-
 
 ## **Rest Variables are not to be changed** 
 
+
+# Deploying:
+
+## Prerequisites
+
+- Install Python3.
+```
+sudo apt install python3
+```
+
+## Setup
+
+- Install Requirements:
+```
+pip3 install -r requirements.txt
+```
+
+- Build Docker:
+```
+sudo docker build . -t torleechgram
+```
+
+- Run Docker:
+```
+sudo docker run torleechgram
+```
+
+
 ## Commands
 
     leech - To Leech a torrent or download a direct link
@@ -265,7 +197,7 @@ Steps:-
     getlogs - Get the robot logs ⚠️ Admin Only
 
 # Credits
-[Yash-DK](https://github.com/yash-dk)
+[Priiiyo](https://github.com/priiiyo)
 
 [Lonami](https://github.com/LonamiWebs/Telethon/) for awesome Telethon
 

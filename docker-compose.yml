@@ -4,10 +4,10 @@ services:
   db:
     image: postgres
     environment:
-      - POSTGRES_DB=tortk
+      - POSTGRES_DB=torlg
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=your-pass
-  tortk:
+  torlg:
     build: .
     command: bash start.sh
     ports:
