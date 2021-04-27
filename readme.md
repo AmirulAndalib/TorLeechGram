@@ -197,7 +197,9 @@ sudo docker run torleechgram
     getlogs - Get the robot logs ⚠️ Admin Only
 
 # Credits
-[Priiiyo](https://github.com/priiiyo)
+[Priiiyo(me)](https://github.com/priiiyo/TorLeechGram) 😊
+
+[yash-dk](https://github.com/yash-dk/TorToolkit-Telegram) for orginal repo 👍
 
 [Lonami](https://github.com/LonamiWebs/Telethon/) for awesome Telethon
 
